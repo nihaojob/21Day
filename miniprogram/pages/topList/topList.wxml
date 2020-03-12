@@ -1,0 +1,46 @@
+
+<view class="title">昨日签到排行榜</view>
+<view class="topUser">
+
+	<view class="top1 item">
+		<text class="iconNum">2</text>
+		<image class="icon" src="../../images/topIcon.png" />
+		<image class="img" src="{{resault[1].url}}" />
+		<text class="name">{{resault[1].name}}</text>
+		<text class="len">{{resault[1].index}}</text>
+	</view>
+	<view class="top1 item big">
+		<text  class="iconNum">1</text>
+		<image class="icon"  src="../../images/topIcon.png" />
+		<image class="img"  src="{{resault[0].url}}" />
+		<text class="name">{{resault[0].name}}</text>
+		<text class="len">{{resault[0].index}}</text>
+	</view>
+	<view class="top1 item">
+		<text  class="iconNum">3</text>
+		<image class="icon"  src="../../images/topIcon.png" />
+		<image class="img"  src="{{resault[2].url}}" />
+		<text class="name">{{resault[2].name}}</text>
+		<text class="len">{{resault[1].index}}</text>
+	</view>
+</view>
+
+<view class="topList">
+	<view class="item" wx:if="{{index > 2}}"  wx:for="{{resault}}" wx:for-index="index"  wx:for-item="item">
+		<text class="index">{{index+1}}</text>
+		<image class="img"  src="{{item.url}}" />
+		<text class="name">{{item.name}}</text>
+		<text class="tip">天数</text>
+		<text class="len">{{item.index}}</text>
+	</view>
+</view>
+
+<view class="TopTips">
+	<text class="name">排名规则：按记录天数统计</text>
+	<text class="name">每天记录早或晚任意一次即为坚持1天</text>
+	<text class="name">如中断则第二天从1重新开始</text>
+</view>
+
+<button class="button" open-type="share">分享给朋友</button>
+
+

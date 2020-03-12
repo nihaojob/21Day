@@ -1,0 +1,77 @@
+/* miniprogram/pages/index/index.wxss */
+page{ background: #F6F7F8; padding-top: -100px; padding-bottom: 40rpx; }
+
+.img{ width:200px;}
+
+.header{
+	position: relative;
+	/*box-shadow: rgba(245, 34, 45, 0.12) 0px 6px 12px;*/
+	box-shadow: 0 6px 10px rgba(5,26,180,0.35);
+	width: 95%; height: 150px; margin: 16px auto; 
+	border-radius: 5px;
+	background: #35aef8;
+	background: -webkit-linear-gradient(-45deg, #35aef8 0%, #7681ff 76%, #7681ff 76%);
+	background: -webkit-linear-gradient(315deg, #35aef8 0%, #7681ff 76%, #7681ff 76%);
+	background: linear-gradient(135deg, #35aef8 0%, #7681ff 76%, #7681ff 76%);
+}
+.header swiper{ height: 100% }
+.header .title{ color: #fff; font-weight: bold; font-size:18px;  position: absolute; top: 10px; left: 10px;  }
+.header swiper swiper-item{ display: flex; }
+.header .noWeight{ flex: 1; text-align: center; color: #fff; padding-top: 60px; font-size: 25px; }
+.header .noWeight .topTitle{ font-size: 12px; display: block;}
+.header .noWeight .unit{ font-size: 10px; padding-left: 5px; }
+
+ff-canvas{ width: 90%; }
+
+.map{
+	width: 90%;
+	height: 200px;
+	border-radius: 3px;
+	box-shadow: rgba(5,26,180,0.15) 0px 1px 8px;
+	 margin: 16px 16px; 
+	background: #fff;	
+}
+.map .title{ font-size: 12px; line-height: 12px; padding-left: 10px;  padding-top: 10px; }
+
+.container {
+  width: 100%;
+  height: 178px
+} 
+
+
+
+
+/*分享*/
+.button{ 
+	box-shadow: 0 3px 5px rgba(5,26,180,0.35);
+	line-height: 30px;
+	font-weight: bold;
+	border-radius: 15px;
+	font-size: 12px;
+	background: linear-gradient(135deg, #576FEC 0%, #576FEC 76%, #536DEC 76%);
+	color: #fff;
+	width: 500rpx;
+	margin-bottom: 50rpx;
+ }
+
+.saveImg{ margin-top: 40rpx; }
+.shareCard{ position: fixed; left: 0; top: 0; bottom: 0; right: 0; background: hsla(0, 0%, 0%, 0.83);}
+.cloShare{  color: #fff; position: absolute; 
+	right: 53rpx;
+	top: 32rpx;
+	border-radius: 25rpx;
+	width: 50rpx;
+	height: 50rpx;
+	line-height: 45rpx;
+	border: 2rpx solid #fff;
+	padding: 0;
+	text-align: center;
+
+}
+.canvasDom{
+	width:500rpx;
+	height:760rpx;
+	margin:0 auto;
+	margin-top: 100rpx;
+	box-shadow: 0 6px 10px rgba(5,26,180,0.35);
+}

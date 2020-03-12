@@ -1,0 +1,9 @@
+<!--miniprogram/pages/null/null.wxml-->
+
+
+<image class="img"  src="../../images/null.png" />
+
+<button wx:if="{{ isAuthorize == false }}" class="button" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" lang="zh_CN" >授权登录</button>
+<button wx:if="{{ isAuthorize == false }}" class="button"  bindtap="tapFn" >拒绝</button>
+
+<view class="text" wx:if="{{ isAuthorize !== false}}">登录中...</view>

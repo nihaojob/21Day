@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/add/add",
+    "pages/null/null",
+    "pages/index/index",
+    "pages/listInfo/listInfo",
+    "pages/detail/detail",
+    "pages/tools/tools",
+    "pages/topList/topList",
+    "pages/Tips/Tips"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "21天体重记录",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#5D1FED",
+    "color": "#767676",
+    "list": [
+      {
+        "iconPath": "images/icon3_hover.png",
+        "selectedIconPath": "images/icon3.png",
+        "pagePath": "pages/index/index",
+        "text": "曲线"
+      },
+      {
+        "iconPath": "images/icon1_hover.png",
+        "selectedIconPath": "images/icon1.png",
+        "pagePath": "pages/add/add",
+        "text": "记录"
+      },
+      {
+        "iconPath": "images/icon2_hover.png",
+        "selectedIconPath": "images/icon2.png",
+        "pagePath": "pages/listInfo/listInfo",
+        "text": "详情"
+      },
+      {
+        "iconPath": "images/icon4_hover.png",
+        "selectedIconPath": "images/icon4.png",
+        "pagePath": "pages/topList/topList",
+        "text": "排行"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

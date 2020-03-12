@@ -1,0 +1,26 @@
+page{background: #F2EFF2;padding-bottom:60rpx;}
+.shadow-lg{
+	font-weight: normal;
+  background:#fff;
+  margin: 40rpx;
+  padding: 40rpx;
+  color: #464646;
+  line-height: 1.4em;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+.title{ font-size: 38rpx; text-align: center; color: #242424;}
+.text-content{margin-top: 40rpx;}
+.text-content .margin-top-sm{ margin-top: 20rpx; font-size: 26rpx; }
+.form textarea{ margin: 40rpx; padding: 20rpx;  background: #fff; border: 1px solid #D2D3D3; width: auto; }
+
+.button{ 
+  margin-top:20rpx;
+	box-shadow: 0 3px 5px rgba(5,26,180,0.35);
+	line-height: 30px;
+	font-weight: bold;
+	border-radius: 15px;
+	font-size: 12px;
+	background: linear-gradient(135deg, #576FEC 0%, #576FEC 76%, #536DEC 76%);
+	color: #fff;
+	width: 500rpx;
+ }

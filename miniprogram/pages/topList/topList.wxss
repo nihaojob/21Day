@@ -1,0 +1,46 @@
+/* miniprogram/pages/topList/topList.wxss */
+page{ background: #F2EFF2; padding-bottom: 40rpx;}
+
+.title{ font-size: 30rpx; display: block; text-align: center; padding-top: 20rpx; padding-bottom: 50rpx; }
+.img{width: 100rpx;height: 100rpx; border-radius: 50rpx;}
+
+.topUser { display: flex;  margin:0 60rpx; height: 270rpx; padding-top: 20rpx; }
+.topUser .item{ flex: 1; position: relative; }
+.topUser .item .iconNum{ display: block; text-align: center; color: #526BE0; position: absolute; left: 0; top: -20rpx; right: 0; }
+.topUser .item .icon{width: 40rpx;height: 40rpx;position: relative; top:5px;}
+.topUser .item text,image{ display: block; text-align: center; margin: 0 auto; }
+.topUser .item .name{ font-size: 20rpx; }
+.topUser .item .len{  color: #E05871; font-weight: bold; font-size: 30rpx;  }
+.topUser .item .img{ margin-bottom: 6px; }
+.topUser .big .img{ width: 120rpx;height: 120rpx; border-radius: 60rpx;   }
+.topUser .big .icon{width: 70rpx;height: 70rpx;position: relative; top:27rpx }
+.topUser .big .name{ font-size: 20rpx; }
+.topUser .big .len{ font-size: 30rpx; }
+.topUser .big .iconNum{ top: -0rpx; }
+
+.topUser .item:nth-child(1){ top: 0rpx; }
+.topUser .item:nth-child(2){ top: -50rpx; }
+.topUser .item:nth-child(3){ top: 0rpx; }
+
+.topList {  background:#Fff; margin:0 20rpx; border-radius: 10rpx; padding: 10rpx 20rpx; overflow: hidden; box-shadow: rgba(5,26,180,0.15) 0px 1px 8px;}
+.topList .item{ border-bottom:1px solid #E8E5E9; display: flex;  line-height: 100rpx; padding: 20rpx 0;  }
+.topList .item:nth-last-child(1){ border: none; }
+.topList .item .index{ color: #28272A;  font-size: 30rpx; width: 60rpx;  text-align: center;  }
+.topList .item .img{width: 100rpx;height: 100rpx; border-radius: 50rpx; margin-right: 30rpx;}
+.topList .item .name{color: #212023; font-size: 30rpx; width: 320rpx; }
+.topList .item .tip{color: #212023; font-size: 18rpx; }
+.topList .item .len{ color: #E05871; font-size: 60rpx; width: 100rpx; text-align: center; font-weight: bold; }
+.TopTips{ font-size: 22rpx; color: #526BE0; display: block; text-align: center;  margin: 0 auto; width: 80%; padding: 40rpx 0;}
+.TopTips text{ display: block; }
+
+.button{ 
+  margin-top:20rpx;
+	box-shadow: 0 3px 5px rgba(5,26,180,0.35);
+	line-height: 30px;
+	font-weight: bold;
+	border-radius: 15px;
+	font-size: 12px;
+	background: linear-gradient(135deg, #576FEC 0%, #576FEC 76%, #536DEC 76%);
+	color: #fff;
+	width: 500rpx;
+ }

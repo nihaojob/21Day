@@ -1,0 +1,21 @@
+/* miniprogram/pages/listInfo/listInfo.wxss */
+
+
+.item{display: flex; margin-bottom: 30px; font-size: 12px; color: #A5A5A5; line-height: 18px;}
+.item .title{ flex: 1; }
+.item .up,.item .down{ width: 128px; }
+.icon{ display: inline-block; font-size: 12px; margin-right: 5px; height: 18px; line-height: 18px; width: 18px; text-align: center; color: #fff; background: #FF9603; border-radius: 5px; }
+
+.map{
+	width: 90%;
+	border-radius: 3px;
+	box-shadow: rgba(5,26,180,0.15) 0px 1px 8px;
+	margin: 16px 16px; 
+	background: #fff;
+	padding: 12px;
+	box-sizing: border-box;
+	position: relative;	
+}
+
+.map .item:nth-last-child(1){ margin-bottom: 0; }
+.img{ width: 100rpx;height: 100rpx;margin: 0 auto;display: block;margin-top: 50rpx}

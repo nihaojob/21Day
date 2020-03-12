@@ -1,0 +1,71 @@
+
+<view class="header">
+
+	<text class="title">当前状况</text>
+	<swiper indicator-dots indicator-color="#61b3ff" indicator-active-color="#F6F6F8"	>
+          <swiper-item>
+          	<view class="noWeight">
+          		<text class="topTitle">当前体重</text>
+          		<view>
+					       {{noWeight}}<text class="unit">kg</text>
+				      </view>
+          	</view>
+			<view class="noWeight">
+				<text class="topTitle">比减少</text>
+        <view>{{remove}}<text class="unit">kg</text></view>
+			</view>
+			<view class="noWeight">
+				<text class="topTitle">已坚持</text>
+				<view>{{days}}<text class="unit">天</text></view>
+			</view>
+          </swiper-item>
+
+          <swiper-item>
+           		<view class="noWeight">
+   	          		<text class="topTitle">平均体重</text>
+   	          		<view>{{average}}<text class="unit">kg</text>
+   					</view>
+   	          	</view>
+   				<view class="noWeight">
+   					<text class="topTitle">最少体重</text>
+   	          		<view>{{min}}<text class="unit">kg</text>
+   					</view>
+   				</view>
+   				<view class="noWeight">
+   					<text class="topTitle">最大体重</text>
+   					<view>{{max}}<text class="unit">kg</text></view>
+   				</view>
+          </swiper-item>
+      </swiper>
+</view>
+
+<view class="map"  hidden="{{showImg}}">
+  <view class="title">体重走向</view>
+  <ff-canvas id="column" class="container" canvas-id="column" opts="{{ line }}"></ff-canvas>    
+</view>
+
+<view class="map"  hidden="{{showImg}}">
+	<view class="title">微信运动{{weRunData.length}}天</view>
+	<ff-canvas id="column-dom" class="container" canvas-id="column" opts="{{ opts }}"></ff-canvas>		
+</view>
+
+<button class="button" open-type="getUserInfo" bindtap="share" >分享到朋友圈</button>
+
+
+<scroll-view wx:if="{{showImg}}" class="shareCard">
+  <button class="cloShare" bindtap="cloShare">x</button>
+  <canvas class="canvasDom" canvas-id="shareCanvas"></canvas>
+  <button class="button saveImg" bindtap="saveImg">保存到相册分享</button>
+  <button class="button saveImg" hidden="{{!setPage}}"   open-type="openSetting" style="margin-top: 20rpx" >设置权限</button>
+  
+</scroll-view>    
+
+
+
+
+<!-- <view class="img"><open-data type="userAvatarUrl" class="img" ></open-data></view> -->
+<!-- <open-data type="userNickName"></open-data> -->
+
+
+
+

@@ -1,0 +1,15 @@
+/* miniprogram/pages/null/null.wxss */
+.text{ text-align: center; margin-top: 100rpx;  }
+
+.img{ width: 200rpx;height: 200rpx;margin: 0 auto;display: block;margin-top: 100rpx}
+.button{ 
+  	margin-top:40rpx;
+	box-shadow: 0 3px 5px rgba(5,26,180,0.35);
+	line-height: 30px;
+	font-weight: bold;
+	border-radius: 15px;
+	font-size: 12px;
+	background: linear-gradient(135deg, #576FEC 0%, #576FEC 76%, #536DEC 76%);
+	color: #fff;
+	width: 500rpx;
+ }

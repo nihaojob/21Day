@@ -1,0 +1,26 @@
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='title'>关于21天体重记录小程序</view>
+  <view class='text-content'>
+    <view>Hi！希望变得更好的你</view>
+    
+
+    <view class='margin-top-sm'>这个项目是我个人开发的一款记录体重的小工具，已经有一部分和你同样优秀的人开始在使用了。</view>
+
+    <view class='margin-top-sm'>由于刚刚上线不久，在日常的使用场景中暴露出一部分bug，为了保证记录的准确性，如果在使用中出现不能记录或者异常的情况，我可以手动先把你的数据同步过去，然后尽全力去修复出现的bug。</view>
+    <view class='margin-top-sm'>可以在下方留言或者加我微信直接反馈：13146890191。</view>
+
+    <view class='margin-top-sm'>你太瘦的话，我确实会嫉妒羡慕恨哦。</view>
+
+    <view class='margin-top-sm'>如果你对功能有好的建议也欢迎提出来。</view>
+
+    <view class='margin-top-sm'>我们一起变得更好！</view>
+
+  </view>
+</view>
+
+
+
+<form class="form" bindsubmit="bindFormSubmit" report-submit>
+    <textarea placeholder="请输入您的问题" name="textarea"/>
+    <button class="button" form-type="submit"> 提交 </button>
+</form>

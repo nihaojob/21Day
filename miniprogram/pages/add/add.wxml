@@ -1,0 +1,32 @@
+<!--miniprogram/pages/add/add.wxml-->
+<view class="container">
+    <view class="map top">
+     <text class="tittle">早上记录 </text>
+      <picker class="picker" disabled="{{ !(!morningEd && timeType == 'morning') }}" mode="multiSelector"  bindchange="bindMultiPickerChange"  data-name="morning" value="{{multiArray}}" range="{{multiArray}}">
+       <view class="picker">
+          选择体重：{{morningValue}} kg 
+          <view class="icon">></view>
+        </view>
+      </picker>
+      
+      <button  wx:if="{{!morningEd && timeType == 'morning'}}"  bindtap="tapFn" class="button">记录</button>
+      <button wx:else  class="button ed">{{morningText}}</button>
+
+    </view>
+    <view class="map bottom">
+     <text class="tittle">晚上记录</text>
+      <picker class="picker" disabled="{{ !(!eveningEd && timeType == 'evening') }}" mode="multiSelector"  bindchange="bindMultiPickerChange" data-name="evening" value="{{multiArray}}" range="{{multiArray}}">
+       <view class="picker">
+          选择体重：{{eveningValue}} kg 
+          <view class="icon">></view>
+        </view>
+      </picker>
+
+      <button  wx:if="{{!eveningEd && timeType == 'evening'}}"  bindtap="tapFn" class="button">记录</button>
+      <button wx:else  class="button ed">{{eveningText}}</button>
+    </view>
+</view>
+
+<button class="button" bindtap="toTopPage" >查看记录排行榜</button>
+
+<text class="TopTips" bindtap="toTopTips">有疑问？点击这里</text>

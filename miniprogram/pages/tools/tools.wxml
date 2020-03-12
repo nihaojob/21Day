@@ -1,0 +1,9 @@
+<button open-type="getUserInfo" bindtap="share" >分享到朋友圈</button>
+<canvas wx:if="{{showImg}}" canvas-id="shareCanvas"></canvas>
+<button bindtap="saveImg" wx:if="{{showImg}}" >保存</button>
+
+
+
+<form bindsubmit="sendTemplateMessageViaCloudFunction" report-submit>
+  <button form-type="submit">发送模板消息</button>
+</form>

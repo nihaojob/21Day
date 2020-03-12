@@ -1,0 +1,12 @@
+{
+  "name": "21Day",
+  "version": "1.1.0",
+  "miniprogram": "dist",
+  "description": "一个21天体重记录的app",
+  "license": "MIT",
+  "dependencies": {
+    "@antv/f2-canvas": "~1.0.5",
+    "@antv/wx-f2": "~1.1.4"
+  },
+  "devDependencies": {}
+}

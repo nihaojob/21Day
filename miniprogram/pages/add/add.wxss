@@ -1,0 +1,54 @@
+/* miniprogram/pages/add/add.wxss */
+
+.btn{ width: 90%; border-radius: 20px; margin-top: 60px;
+  /* box-shadow: 0 0 5px #888; */
+}
+
+.selectList{ width: 90%;  border: 1px solid #E8E8E8;border-radius: 20px;height: 40px; line-height: 40px; box-sizing: border-box; padding: 0 20px; margin-top: 20px;}
+
+.radio{ margin-right: 10px;}
+.radio-group{ padding-top: 20px; padding-bottom: 20px;}
+
+.map{
+	width: 90%;
+	height: 100px;
+	border-radius: 3px;
+	box-shadow: rgba(5,26,180,0.15) 0px 1px 8px;
+	margin: 16px 16px; 
+	background: #fff;
+	position: relative;	
+}
+
+.map .button{ 
+	box-shadow: 0 3px 5px rgba(5,26,180,0.35);
+	line-height: 30px;
+	font-weight: bold;
+	border-radius: 15px;
+	font-size: 12px;
+	background: linear-gradient(135deg, #576FEC 0%, #576FEC 76%, #536DEC 76%);
+	color: #fff;
+	width: 80px;
+	position: absolute;
+	right: 16px;
+	top: 35px;
+ }
+.map .button.ed{ background: #CACACA; box-shadow: none; }
+.top{ margin-bottom: 0; border-bottom:1px dotted #E5E5E4;  }
+.bottom{ margin-top: 0; }
+.map .tittle{ font-size: 10px; color:#888888; position: absolute; left: 16px; top:15px;  }
+.map .picker{ font-size: 16px;  position: absolute; left: 8px; width: 200px; top: 19px;}
+.map .picker .icon{ font-size: 10px; color:#888888;  position: absolute; left: 140px; top: 5px; transform:rotate(90deg);}
+
+.button{ 
+  margin-top:20rpx;
+	box-shadow: 0 3px 5px rgba(5,26,180,0.35);
+	line-height: 30px;
+	font-weight: bold;
+	border-radius: 15px;
+	font-size: 12px;
+	background: linear-gradient(135deg, #576FEC 0%, #576FEC 76%, #536DEC 76%);
+	color: #fff;
+	width: 500rpx;
+ }
+
+ .TopTips{ font-size: 22rpx; color: #526BE0; display: block; text-align: center; margin-top: 50rpx;}

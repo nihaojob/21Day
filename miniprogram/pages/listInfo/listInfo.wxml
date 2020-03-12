@@ -1,0 +1,29 @@
+<!--miniprogram/pages/listInfo/listInfo.wxml-->
+<view class="map">
+
+
+<view wx:if="{{resault.length != 0}}" >
+  <view class='item' wx:for="{{resault}}" wx:for-index="key"  wx:for-item="value">
+    <view class='title'>{{value.date}}</view>
+    <view class='up'>
+      <view class="icon">早</view>
+      {{value.morningValue*2}}斤 | {{value.morningValue}}kg
+    </view>
+    <view class='down'>
+      <view class="icon">晚</view>
+      {{value.eveningValue*2}}斤 | {{value.eveningValue}}kg
+    </view>
+  </view>
+  <button open-type="share">分享给朋友</button>
+</view>
+
+  <view wx:if="{{resault.length == 0}}" >
+    <image class="img"  src="../../images/null.png" />
+    <view style="text-align: center; padding-bottom: 50rpx">你还没有记录过哦</view>
+  </view>
+
+</view>
+
+
+
+
